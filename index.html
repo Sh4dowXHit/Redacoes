@@ -4,53 +4,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Servidor Renegados</title>
+  <title>Renegados Launcher</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header class="header">
-    <div class="container">
-      <img src="logo.png" alt="Renegados Logo" class="logo" />
-      <nav class="menu">
-        <a href="#sobre">Sobre</a>
-        <a href="#conexao">Conectar</a>
-        <a href="#discord">Discord</a>
-      </nav>
-    </div>
-  </header>
+  <div class="launcher">
+    <header>
+      <img src="logo.png" alt="Logo Renegados" class="logo" />
+    </header>
 
-  <section class="hero" id="sobre">
-    <div class="container hero-content">
-      <h1>Bem-vindo ao Renegados</h1>
-      <p>Venha se aventurar no nosso servidor Minecraft. Diversão garantida!</p>
-      <a href="#conexao" class="btn btn-primary">Conectar Agora</a>
-    </div>
-  </section>
+    <main>
+      <h1>Servidor Renegados</h1>
+      <p class="ip">IP: <span class="copy-ip" data-ip="renegados.magnohost.com.br">renegados.magnohost.com.br</span></p>
 
-  <section class="info-section" id="conexao">
-    <div class="container info-grid">
-      <div class="info-card">
-        <h2>Bedrock</h2>
-        <p class="copy-ip" data-ip="sp-11.magnohost.com.br">IP: sp-11.magnohost.com.br</p>
-        <p class="copy-ip" data-ip="25515">Porta: 25515</p>
+      <div class="server-status">
+        <p>Status: <span class="online">Online</span></p>
+        <p>Versão: 1.20+</p>
       </div>
-      <div class="info-card">
-        <h2>Java</h2>
-        <p class="copy-ip" data-ip="renegados.magnohost.com.br">IP: renegados.magnohost.com.br</p>
-      </div>
-      <div class="info-card" id="discord">
-        <h2>Discord</h2>
-        <p><a href="https://discord.gg/9tSpkwVc" target="_blank">Entrar no Discord</a></p>
-      </div>
-    </div>
-  </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Renegados Minecraft. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+      <a href="minecraft://?addExternalServer=Renegados|renegados.magnohost.com.br" class="btn">Conectar Agora</a>
+
+      <a href="https://discord.gg/9tSpkwVc" target="_blank" class="discord-btn">Entrar no Discord</a>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Renegados Minecraft</p>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
