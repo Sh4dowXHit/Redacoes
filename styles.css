@@ -25,9 +25,12 @@ body {
 }
 
 .logo {
+  display: block; /* Garante que apareça */
   max-width: 120px;
+  width: 100%; /* Ajustável para responsivo */
+  height: auto;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   box-shadow: 0 0 12px #6c2dad;
 }
 
