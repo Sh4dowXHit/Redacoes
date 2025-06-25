@@ -11,9 +11,9 @@
 
   <div class="menu-toggle" id="menuToggle">&#9776;</div>
   <nav class="side-menu" id="sideMenu">
-    <a href="#sobre">Sobre</a>
-    <a href="#conectar">Conectar</a>
-    <a href="#loja">Loja</a>
+    <a href="#" data-tab="sobre">Sobre</a>
+    <a href="#" data-tab="conectar">Conectar</a>
+    <a href="#" data-tab="loja">Loja</a>
   </nav>
 
   <div class="launcher">
@@ -22,25 +22,23 @@
     </header>
 
     <main>
-      <section id="sobre">
+      <section id="sobre" class="tab active">
         <h1>Servidor Renegados</h1>
         <p>Servidor brasileiro de Minecraft com suporte Java e Bedrock, feito para diversão e comunidade!</p>
       </section>
 
-      <section id="conectar">
+      <section id="conectar" class="tab">
         <h2>Conexão</h2>
         <p class="ip">IP: <span class="copy-ip" data-ip="renegados.magnohost.com.br">renegados.magnohost.com.br</span></p>
-
         <div class="server-status">
           <p>Status: <span class="online">Online</span></p>
-          <p>Versão: 1.21.5</p>
+          <p>Versão: 1.20+</p>
         </div>
-
         <a href="minecraft://?addExternalServer=Renegados|renegados.magnohost.com.br" class="btn">Conectar Agora</a>
         <a href="https://discord.gg/9tSpkwVc" target="_blank" class="discord-btn">Entrar no Discord</a>
       </section>
 
-      <section id="loja">
+      <section id="loja" class="tab">
         <h2>Loja</h2>
         <p>Em breve: itens VIP, ranks exclusivos e mais!</p>
         <a href="#" class="btn">Acessar Loja</a>
