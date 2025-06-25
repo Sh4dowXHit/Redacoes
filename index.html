@@ -9,23 +9,42 @@
 </head>
 <body>
 
+  <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  <nav class="side-menu" id="sideMenu">
+    <a href="#sobre">Sobre</a>
+    <a href="#conectar">Conectar</a>
+    <a href="#loja">Loja</a>
+  </nav>
+
   <div class="launcher">
     <header>
       <img src="logo.png" alt="Logo Renegados" class="logo" />
     </header>
 
     <main>
-      <h1>Servidor Renegados</h1>
-      <p class="ip">IP: <span class="copy-ip" data-ip="renegados.magnohost.com.br">renegados.magnohost.com.br</span></p>
+      <section id="sobre">
+        <h1>Servidor Renegados</h1>
+        <p>Servidor brasileiro de Minecraft com suporte Java e Bedrock, feito para diversão e comunidade!</p>
+      </section>
 
-      <div class="server-status">
-        <p>Status: <span class="online">Online</span></p>
-        <p>Versão: 1.21.4 e 1.21.5</p>
-      </div>
+      <section id="conectar">
+        <h2>Conexão</h2>
+        <p class="ip">IP: <span class="copy-ip" data-ip="renegados.magnohost.com.br">renegados.magnohost.com.br</span></p>
 
-      <a href="minecraft://?addExternalServer=Renegados|renegados.magnohost.com.br" class="btn">Conectar Agora</a>
+        <div class="server-status">
+          <p>Status: <span class="online">Online</span></p>
+          <p>Versão: 1.21.5</p>
+        </div>
 
-      <a href="https://discord.gg/9tSpkwVc" target="_blank" class="discord-btn">Entrar no Discord</a>
+        <a href="minecraft://?addExternalServer=Renegados|renegados.magnohost.com.br" class="btn">Conectar Agora</a>
+        <a href="https://discord.gg/9tSpkwVc" target="_blank" class="discord-btn">Entrar no Discord</a>
+      </section>
+
+      <section id="loja">
+        <h2>Loja</h2>
+        <p>Em breve: itens VIP, ranks exclusivos e mais!</p>
+        <a href="#" class="btn">Acessar Loja</a>
+      </section>
     </main>
 
     <footer>
