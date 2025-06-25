@@ -1,54 +1,45 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Renegados Launcher</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+<!DOCTYPE html>  <html lang="pt-BR">  
+<head>  
+  <meta charset="UTF-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <title>Renegados Launcher</title>  
+  <link rel="stylesheet" href="styles.css" />  
+</head>  
+<body>    <div class="menu-toggle" id="menuToggle">&#9776;</div>  
+  <nav class="side-menu" id="sideMenu">  
+    <a href="#" data-tab="sobre">Sobre</a>  
+    <a href="#" data-tab="conectar">Conectar</a>  
+    <a href="#" data-tab="loja">Loja</a>  
+  </nav>    <div class="launcher">  
+    <header>  
+      <img src="https://i.imgur.com/a/cr6XfZ.png" alt="Logo Renegados" class="logo" />  
+    </header>  <main>  
+  <section id="sobre" class="tab active">  
+    <h1>Servidor Renegados</h1>  
+    <p>Servidor brasileiro de Minecraft com suporte Java e Bedrock, feito para diversão e comunidade!</p>  
+  </section>  
 
-  <div class="menu-toggle" id="menuToggle">&#9776;</div>
-  <nav class="side-menu" id="sideMenu">
-    <a href="#" data-tab="sobre">Sobre</a>
-    <a href="#" data-tab="conectar">Conectar</a>
-    <a href="#" data-tab="loja">Loja</a>
-  </nav>
+  <section id="conectar" class="tab">  
+    <h2>Conexão</h2>  
+    <p class="ip">IP: <span class="copy-ip" data-ip="renegados.magnohost.com.br">renegados.magnohost.com.br</span></p>  
+    <div class="server-status">  
+      <p>Status: <span class="online">Online</span></p>  
+      <p>Versão: 1.21.5</p>  
+    </div>  
+    <a href="minecraft://?addExternalServer=Renegados|renegados.magnohost.com.br" class="btn">Conectar Agora</a>  
+    <a href="https://discord.gg/9tSpkwVc" target="_blank" class="discord-btn">Entrar no Discord</a>  
+  </section>  
 
-  <div class="launcher">
-    <header>
-      <img src="https://cdn.discordapp.com/attachments/1387528421910904994/1387529019410612294/AhaTik_renegados26_13db8cb8-9f73-43fe-9c92-c4b35a37bc17_.jpg" alt="Logo Renegados" class="logo"/>
-    </header>
+  <section id="loja" class="tab">  
+    <h2>Loja</h2>  
+    <p>Em breve: itens VIP, ranks exclusivos e mais!</p>  
+    <a href="#" class="btn">Acessar Loja</a>  
+  </section>  
+</main>  
 
-    <main>
-      <section id="sobre" class="tab active">
-        <h1>Servidor Renegados</h1>
-        <p>Servidor brasileiro de Minecraft com suporte Java e Bedrock, feito para diversão e comunidade!</p>
-      </section>
+<footer>  
+  <p>&copy; 2025 Renegados Minecraft</p>  
+</footer>
 
-      <section id="conectar" class="tab">
-        <h2>Conexão</h2>
-        <p class="ip">IP: <span class="copy-ip" data-ip="renegados.magnohost.com.br">renegados.magnohost.com.br</span></p>
-        <div class="server-status">
-          <p>Status: <span class="online">Online</span></p>
-          <p>Versão: 1.21.5</p>
-        </div>
-        <a href="minecraft://?addExternalServer=Renegados|renegados.magnohost.com.br" class="btn">Conectar Agora</a>
-        <a href="https://discord.gg/9tSpkwVc" target="_blank" class="discord-btn">Entrar no Discord</a>
-      </section>
-
-      <section id="loja" class="tab">
-        <h2>Loja</h2>
-        <p>Em breve: itens VIP, ranks exclusivos e mais!</p>
-        <a href="#" class="btn">Acessar Loja</a>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2025 Renegados Minecraft</p>
-    </footer>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+  </div>    <script src="script.js"></script>  </body>  
 </html>
