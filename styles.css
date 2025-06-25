@@ -1,9 +1,9 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to bottom right, #0f0f0f, #1e002e);
@@ -13,8 +13,9 @@ body {
   align-items: center;
   height: 100vh;
 }
+
 .launcher {
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 20px;
   padding: 30px;
   width: 90%;
@@ -22,33 +23,42 @@ body {
   text-align: center;
   box-shadow: 0 0 20px #6c2dad;
 }
+
 .logo {
-  max-width: 100px;
+  max-width: 120px;
+  border-radius: 10px;
   margin-bottom: 20px;
+  box-shadow: 0 0 12px #6c2dad;
 }
+
 h1 {
   font-size: 2rem;
   margin-bottom: 10px;
   color: #9d7aff;
 }
+
 .ip {
   font-size: 1.1rem;
   margin-bottom: 15px;
 }
+
 .copy-ip {
   color: #7aff7a;
   cursor: pointer;
 }
+
 .server-status {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
+
 .server-status .online {
   color: #4caf50;
   font-weight: bold;
 }
+
 .btn, .discord-btn {
   display: block;
   background: #6c2dad;
@@ -60,9 +70,11 @@ h1 {
   text-decoration: none;
   transition: background 0.3s;
 }
+
 .btn:hover, .discord-btn:hover {
   background: #8a44d8;
 }
+
 footer {
   font-size: 0.8rem;
   color: #aaa;
@@ -70,44 +82,44 @@ footer {
 }
 
 .menu-toggle {
-  position: absolute;
+  position: fixed;
   top: 15px;
   left: 20px;
   font-size: 30px;
   color: white;
   cursor: pointer;
-  z-index: 999;
+  z-index: 1000;
 }
+
 .side-menu {
   position: fixed;
   top: 0;
   left: -200px;
   width: 180px;
   height: 100%;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0, 0, 0, 0.9);
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   transition: left 0.3s ease;
-  z-index: 998;
+  z-index: 999;
 }
+
 .side-menu a {
   color: #fff;
   font-size: 18px;
+  text-decoration: none;
 }
+
 .side-menu.open {
   left: 0;
 }
+
 .tab {
   display: none;
 }
+
 .tab.active {
   display: block;
-}
-.logo {
-  max-width: 120px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 12px #6c2dad;
 }
