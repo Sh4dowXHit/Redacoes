@@ -1,23 +1,16 @@
 
-// Scroll suave ao clicar nos links
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-    const destino = document.querySelector(this.getAttribute('href'));
-    if (destino) {
-      destino.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
+// Copiar IP ao tocar
+document.querySelectorAll('.copy-ip').forEach(el => {
+  el.addEventListener('click', () => {
+    const ip = el.getAttribute('data-ip');
+    navigator.clipboard.writeText(ip);
+    alert(`IP copiado: ${ip}`);
   });
 });
 
-// Cópia de IP ao clicar
-document.querySelectorAll('.copy-ip').forEach(element => {
-  element.addEventListener('click', () => {
-    const texto = element.getAttribute('data-ip');
-    navigator.clipboard.writeText(texto).then(() => {
-      alert(`IP copiado: ${texto}`);
-    });
-  });
+// Toggle menu lateral
+const menuToggle = document.getElementById('menuToggle');
+const sideMenu = document.getElementById('sideMenu');
+menuToggle.addEventListener('click', () => {
+  sideMenu.classList.toggle('open');
 });
