@@ -68,3 +68,35 @@ footer {
   color: #aaa;
   margin-top: 20px;
 }
+
+/* Menu hambúrguer */
+.menu-toggle {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 999;
+}
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -200px;
+  width: 180px;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: left 0.3s ease;
+  z-index: 998;
+}
+.side-menu a {
+  color: #fff;
+  font-size: 18px;
+}
+.side-menu.open {
+  left: 0;
+}
