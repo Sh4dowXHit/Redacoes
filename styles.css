@@ -69,7 +69,6 @@ footer {
   margin-top: 20px;
 }
 
-/* Menu hambúrguer */
 .menu-toggle {
   position: absolute;
   top: 15px;
@@ -99,4 +98,10 @@ footer {
 }
 .side-menu.open {
   left: 0;
+}
+.tab {
+  display: none;
+}
+.tab.active {
+  display: block;
 }
