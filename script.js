@@ -1,12 +1,13 @@
-
-// Alternar menu lateral
 const menuToggle = document.getElementById('menuToggle');
 const sideMenu = document.getElementById('sideMenu');
+
+// Alternar menu lateral
 menuToggle.addEventListener('click', () => {
   sideMenu.classList.toggle('open');
+  menuToggle.style.display = sideMenu.classList.contains('open') ? 'block' : 'block'; // permanece visível ao abrir
 });
 
-// Alternar abas
+// Alternar abas e esconder o botão
 const links = document.querySelectorAll('.side-menu a');
 const tabs = document.querySelectorAll('.tab');
 
@@ -16,15 +17,14 @@ links.forEach(link => {
     const tabId = link.getAttribute('data-tab');
     tabs.forEach(tab => tab.classList.remove('active'));
     document.getElementById(tabId).classList.add('active');
-    sideMenu.classList.remove('open');
-  });
-});
 
-// Copiar IP ao toque
-document.querySelectorAll('.copy-ip').forEach(el => {
-  el.addEventListener('click', () => {
-    const ip = el.getAttribute('data-ip');
-    navigator.clipboard.writeText(ip);
-    alert(`IP copiado: ${ip}`);
+    // Fechar menu e esconder botão ≡
+    sideMenu.classList.remove('open');
+    menuToggle.style.display = 'none';
+
+    // Mostrar o botão novamente após 500ms (tempo para trocar aba)
+    setTimeout(() => {
+      menuToggle.style.display = 'block';
+    }, 500);
   });
 });
