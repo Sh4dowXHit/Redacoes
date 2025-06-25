@@ -6,93 +6,65 @@
 }
 body {
   font-family: 'Segoe UI', sans-serif;
-  color: #333;
-  background-color: #fafafa;
-  line-height: 1.6;
+  background: linear-gradient(to bottom right, #0f0f0f, #1e002e);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-a {
-  text-decoration: none;
-  color: inherit;
-}
-.container {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 20px;
-}
-.header {
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+.launcher {
+  background: rgba(0,0,0,0.6);
+  border-radius: 20px;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 20px #6c2dad;
 }
 .logo {
-  height: 50px;
-}
-.menu a {
-  margin-left: 20px;
-  font-weight: 500;
-  color: #555;
-}
-.menu a:hover {
-  color: #333;
-}
-.hero {
-  background: #1e002e;
-  height: 65vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hero-content {
-  text-align: center;
-  color: #fdfdfd;
-}
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-.hero p {
-  font-size: 1.2rem;
+  max-width: 100px;
   margin-bottom: 20px;
 }
-.btn {
-  display: inline-block;
-  padding: 12px 30px;
-  border-radius: 6px;
-  font-weight: 600;
-  transition: opacity 0.3s;
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #9d7aff;
 }
-.btn-primary {
-  background: #6c2dad;
-  color: #fff;
-}
-.btn-primary:hover {
-  opacity: 0.9;
-}
-.info-section {
-  padding: 60px 0;
-  background: #fff;
-}
-.info-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-}
-.info-card {
-  background: #f9f9f9;
-  border-radius: 8px;
-  padding: 25px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-.info-card h2 {
+.ip {
+  font-size: 1.1rem;
   margin-bottom: 15px;
-  color: #6c2dad;
 }
-.footer {
-  background: #333;
-  color: #eee;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 60px;
+.copy-ip {
+  color: #7aff7a;
+  cursor: pointer;
+}
+.server-status {
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.server-status .online {
+  color: #4caf50;
+  font-weight: bold;
+}
+.btn, .discord-btn {
+  display: block;
+  background: #6c2dad;
+  padding: 12px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.1rem;
+  margin: 10px 0;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.btn:hover, .discord-btn:hover {
+  background: #8a44d8;
+}
+footer {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 20px;
 }
