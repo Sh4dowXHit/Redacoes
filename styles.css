@@ -105,3 +105,9 @@ footer {
 .tab.active {
   display: block;
 }
+.logo {
+  max-width: 120px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 12px #6c2dad;
+}
